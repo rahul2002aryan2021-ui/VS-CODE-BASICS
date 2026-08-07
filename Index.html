@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Basics Guide | Devl Rahul</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Progress Bar -->
+<div id="progressBar"></div>
+
+<!-- Header -->
+<header>
+
+<div class="logo">
+<i class="ri-code-box-fill"></i>
+<span>VS Code Guide</span>
+</div>
+
+<div class="header-right">
+
+<input
+type="text"
+id="search"
+placeholder="Search Topic...">
+
+<button id="themeBtn">
+<i class="ri-moon-fill"></i>
+</button>
+
+<button id="menuBtn">
+<i class="ri-menu-line"></i>
+</button>
+
+</div>
+
+</header>
+
+<!-- Sidebar -->
+
+<aside id="sidebar">
+
+<h2>Contents</h2>
+
+<ul>
+
+<li><a href="#home">🏠 Home</a></li>
+
+<li><a href="#intro">VS Code Introduction</a></li>
+
+<li><a href="#download">Download & Install</a></li>
+
+<li><a href="#interface">VS Code Interface</a></li>
+
+<li><a href="#explorer">Explorer</a></li>
+
+<li><a href="#editor">Editor</a></li>
+
+<li><a href="#terminal">Terminal</a></li>
+
+<li><a href="#extensions">Extensions</a></li>
+
+<li><a href="#liveserver">Live Server</a></li>
+
+<li><a href="#shortcuts">Keyboard Shortcuts</a></li>
+
+<li><a href="#settings">Settings</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</aside>
+
+<!-- Main Content -->
+
+<main>
+
+<section id="home">
+
+<h1>VS Code Basics Guide</h1>
+
+<p>
+Welcome to the complete beginner guide of Visual Studio Code.
+Learn VS Code step-by-step with practical examples.
+</p>
+
+</section>
+<section id="intro">
+
+    <h2>💻 VS Code Kya Hai?</h2>
+
+    <p>
+        Visual Studio Code (VS Code) Microsoft ka ek free aur lightweight
+        Code Editor hai. Iska use HTML, CSS, JavaScript, Python, PHP aur
+        bahut si programming languages ka code likhne ke liye kiya jata hai.
+    </p>
+
+    <div class="info-card">
+
+        <h3>✨ VS Code Ki Features</h3>
+
+        <ul>
+            <li>✔ Free aur Fast</li>
+            <li>✔ Windows, macOS aur Linux Support</li>
+            <li>✔ Built-in Terminal</li>
+            <li>✔ Thousands of Extensions</li>
+            <li>✔ Auto Complete (IntelliSense)</li>
+            <li>✔ Live Preview Extension Support</li>
+        </ul>
+
+    </div>
+
+    <div class="tip-box">
+        <strong>💡 Tip:</strong>
+        Agar aap HTML, CSS aur JavaScript seekh rahe hain to VS Code sabse best editor hai.
+    </div>
+
+</section>
+<section id="download">
+
+    <h2>📥 Download & Install VS Code</h2>
+
+    <p>
+        VS Code ko download aur install karna bahut hi easy hai. Bas neeche diye gaye steps follow karein.
+    </p>
+
+    <div class="step-card">
+
+        <h3>Step 1</h3>
+        <p>Official VS Code website open karein.</p>
+
+    </div>
+
+    <div class="step-card">
+
+        <h3>Step 2</h3>
+        <p>Apne Operating System (Windows, macOS ya Linux) ke hisaab se Download button par click karein.</p>
+
+    </div>
+
+    <div class="step-card">
+
+        <h3>Step 3</h3>
+        <p>Download hone ke baad setup file open karein aur <b>Next → Next → Install</b> par click karein.</p>
+
+    </div>
+
+    <div class="step-card">
+
+        <h3>Step 4</h3>
+        <p>Installation complete hone ke baad <b>Finish</b> par click karein aur VS Code open karein.</p>
+
+    </div>
+
+    <div class="warning-box">
+
+        <strong>⚠ Important:</strong>
+
+        Installation ke time <b>"Add to PATH"</b> aur <b>"Open with Code"</b> wale options ko tick karna na bhoolen.
+
+    </div>
+
+</section>
+<section id="interface">
+
+    <h2>🖥️ VS Code Interface</h2>
+
+    <p>
+        Jab aap pehli baar VS Code open karte hain, to screen par alag-alag sections dikhai dete hain. Har section ka apna alag kaam hota hai.
+    </p>
+
+    <div class="grid">
+
+        <div class="box">
+            <h3>📁 Explorer</h3>
+            <p>Project ki files aur folders dekhne ke liye.</p>
+        </div>
+
+        <div class="box">
+            <h3>📄 Editor</h3>
+            <p>Yahin par aap HTML, CSS, JavaScript ya kisi bhi language ka code likhte hain.</p>
+        </div>
+
+        <div class="box">
+            <h3>💻 Terminal</h3>
+            <p>Commands run karne aur projects execute karne ke liye.</p>
+        </div>
+
+        <div class="box">
+            <h3>🧩 Extensions</h3>
+            <p>Naye features add karne ke liye, jaise Live Server aur Prettier.</p>
+        </div>
+
+        <div class="box">
+            <h3>⚙️ Settings</h3>
+            <p>Theme, Font Size aur baaki preferences change karne ke liye.</p>
+        </div>
+
+        <div class="box">
+            <h3>📊 Status Bar</h3>
+            <p>Neeche wali bar jahan language, errors aur project information dikhti hai.</p>
+        </div>
+
+    </div>
+
+</section>
+<section id="explorer">
+
+    <h2>📂 Explorer (Files & Folders)</h2>
+
+    <p>
+        Explorer VS Code ka woh section hai jahan aap apne project ki sabhi files aur folders ko manage karte hain.
+    </p>
+
+    <div class="step-card">
+        <h3>Step 1 - Folder Open Karein</h3>
+        <p>
+            <b>File → Open Folder</b> par click karein aur apna project folder select karein.
+        </p>
+    </div>
+
+    <div class="step-card">
+        <h3>Step 2 - New File Banayein</h3>
+        <p>
+            Explorer me <b>New File (+)</b> icon par click karein aur file ka naam
+            <code>index.html</code> likhein.
+        </p>
+    </div>
+
+    <div class="step-card">
+        <h3>Step 3 - New Folder Banayein</h3>
+        <p>
+            <b>New Folder</b> icon par click karke folder banayein, jaise
+            <code>css</code>, <code>js</code> aur <code>images</code>.
+        </p>
+    </div>
+
+    <div class="step-card">
+        <h3>Step 4 - Project Structure</h3>
+
+<pre><code>My Project/
+│── index.html
+│── css/
+│     └── style.css
+│── js/
+│     └── script.js
+│── images/
+</code></pre>
+
+    </div>
+
+    <div class="tip-box">
+        <strong>💡 Tip:</strong>
+        Hamesha project ko ek folder ke andar hi banayein. Isse files manage karna aur project ko future me update karna bahut aasaan hota hai.
+    </div>
+
+</section>
+<section id="save">
+
+    <h2>💾 Save & Auto Save</h2>
+
+    <p>
+        Code likhne ke baad file ko save karna bahut zaroori hota hai. Agar file save nahi hogi to changes browser me dikhai nahi denge.
+    </p>
+
+    <div class="step-card">
+
+        <h3>💾 File Save Kaise Kare?</h3>
+
+        <ul>
+            <li>✔ Windows: <b>Ctrl + S</b></li>
+            <li>✔ Mac: <b>Cmd + S</b></li>
+            <li>✔ Ya <b>File → Save</b> par click karein.</li>
+        </ul>
+
+    </div>
+
+    <div class="step-card">
+
+        <h3>⚡ Auto Save Enable Karein</h3>
+
+        <p>
+            <b>File → Auto Save</b> par click karein.
+            Iske baad file har change ke saath automatically save hoti rahegi.
+        </p>
+
+    </div>
+
+    <div class="tip-box">
+
+        <strong>💡 Tip:</strong>
+
+        Beginners ke liye Auto Save ON rakhna best hai, taaki save karna bhoolne par bhi changes lose na hon.
+
+    </div>
+
+</section>
+<section id="terminal">
+
+    <h2>🖥️ Integrated Terminal</h2>
+
+    <p>
+        VS Code me built-in Terminal hota hai jisse aap commands run kar sakte hain bina alag Command Prompt ya PowerShell khole.
+    </p>
+
+    <div class="step-card">
+
+        <h3>📂 Terminal Open Karne Ke Tarike</h3>
+
+        <ul>
+            <li>✔ Menu → Terminal → New Terminal</li>
+            <li>✔ Shortcut: <b>Ctrl + `</b></li>
+        </ul>
+
+    </div>
+
+    <div class="step-card">
+
+        <h3>📌 Terminal Ka Use</h3>
+
+        <ul>
+            <li>✔ Project run karna</li>
+            <li>✔ Git commands chalana</li>
+            <li>✔ npm install karna</li>
+            <li>✔ Python ya Node.js commands run karna</li>
+        </ul>
+
+    </div>
+
+    <div class="tip-box">
+
+        <strong>💡 Tip:</strong>
+
+        Agar aap HTML/CSS/JavaScript hi seekh rahe hain, to shuruaat me Terminal ka basic use samajhna hi kaafi hai.
+
+    </div>
+
+</section>
+<section id="extensions">
+
+<h2>🔌 Essential Extensions</h2>
+
+<p>
+VS Code ki sabse badi khasiyat uski Extensions hain. Agar aap Web Development shuru kar rahe hain, to ye 3 Extensions zarur install karein.
+</p>
+
+<div class="grid">
+
+<div class="box">
+<h3>🌐 Live Server</h3>
+<p>
+HTML website ko browser me Live Preview ke saath run karne ke liye.
+</p>
+</div>
+
+<div class="box">
+<h3>🎨 Prettier</h3>
+<p>
+Code ko automatically clean aur properly format karta hai.
+</p>
+</div>
+
+<div class="box">
+<h3>🏷️ Auto Rename Tag</h3>
+<p>
+Opening HTML tag change karne par closing tag bhi automatically update ho jata hai.
+</p>
+</div>
+
+</div>
+
+<div class="tip-box">
+<strong>💡 Tip:</strong>
+Beginners ke liye sabse pehle <b>Live Server</b> install karna chahiye.
+</div>
+
+</section>
+<section id="shortcuts">
+
+<h2>⌨️ Important Keyboard Shortcuts</h2>
+
+<table class="shortcut-table">
+
+<tr>
+<th>Shortcut</th>
+<th>Kaam</th>
+</tr>
+
+<tr>
+<td>Ctrl + S</td>
+<td>File Save</td>
+</tr>
+
+<tr>
+<td>Ctrl + C</td>
+<td>Copy</td>
+</tr>
+
+<tr>
+<td>Ctrl + V</td>
+<td>Paste</td>
+</tr>
+
+<tr>
+<td>Ctrl + X</td>
+<td>Cut</td>
+</tr>
+
+<tr>
+<td>Ctrl + Z</td>
+<td>Undo</td>
+</tr>
+
+<tr>
+<td>Ctrl + Y</td>
+<td>Redo</td>
+</tr>
+
+<tr>
+<td>Ctrl + A</td>
+<td>Select All</td>
+</tr>
+
+<tr>
+<td>Ctrl + F</td>
+<td>Find</td>
+</tr>
+
+<tr>
+<td>Ctrl + H</td>
+<td>Replace</td>
+</tr>
+
+<tr>
+<td>Ctrl + /</td>
+<td>Comment / Uncomment</td>
+</tr>
+
+<tr>
+<td>Ctrl + Shift + P</td>
+<td>Command Palette</td>
+</tr>
+
+<tr>
+<td>Ctrl + `</td>
+<td>Open Terminal</td>
+</tr>
+
+</table>
+
+</section>
+<section id="conclusion">
+
+<h2>🎉 Congratulations!</h2>
+
+<p>
+
+Ab aap VS Code ki basic cheezein seekh chuke hain.
+
+✔ VS Code Install karna
+
+✔ Files aur Folder banana
+
+✔ Save aur Auto Save
+
+✔ Terminal use karna
+
+✔ Extensions install karna
+
+✔ Important Shortcuts
+
+Ab aap HTML, CSS aur JavaScript projects banana confidently shuru kar sakte hain.
+
+</p>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
